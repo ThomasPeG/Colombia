@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import DestinationCard from '../../components/common/DestinationCard.astro';
+import SectionContainer from '../../components/common/SectionContainer.astro';
+import { gastronomia } from '../../data/gastronomia';
+---
+
+<Layout title="Gastronomía Colombiana - Colombia Mágica">
+  <main class="container mx-auto px-4">
+    <SectionContainer title="Sabores de Colombia" id="gastronomia-main">
+      <div class="grid md:grid-cols-3 gap-6">
+        {gastronomia.map(plato => (
+          <DestinationCard 
+            title={plato.title}
+            description={plato.description}
+            imageUrl={plato.imageUrl}
+            imageAlt={plato.title}
+            href={plato.href}
+          />
+        ))}
+      </div>
+    </SectionContainer>
+  </main>
+</Layout>

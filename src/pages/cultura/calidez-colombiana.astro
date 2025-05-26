@@ -1,0 +1,104 @@
+---
+import DetailLayout from '../../layouts/DetailLayout.astro';
+---
+
+<DetailLayout 
+  title="La Calidez de Nuestra Gente" 
+  description="Descubre la esencia del pueblo colombiano, su diversidad cultural, tradiciones y la hospitalidad que nos caracteriza en cada rincón del país."
+  type="culture"
+>
+  <div class="content-section">
+    <h2 class="text-3xl font-bold mb-4">La Alegría de Nuestro Pueblo</h2>
+    <p class="text-lg mb-6">Los colombianos somos reconocidos mundialmente por nuestra calidez y hospitalidad. Nuestra forma de ser refleja la riqueza cultural y la diversidad de nuestras regiones.</p>
+    
+    <div class="image-gallery">
+      <img src="https://vinculos.co/wp-content/uploads/2024/01/2-11.jpg" alt="Gente Colombiana" class="gallery-image w-full h-64 object-cover"/>
+      <img src="https://colombia.co/sites/default/files/marca-pais/images/wp-content/uploads/2020/07/Palenquera-en-Cartagena-una-de-los-representantes-de-la-cultura-colombiana-%E2%80%93-Palenquera-sonriente-en-Cartagena-vendiendo-frutas-colombianas-Marca-Pai%CC%81s-Colombia.jpg" alt="Tradiciones Colombianas" class="gallery-image w-full h-64 object-cover"/>
+      <img src="https://elencuadretorcido.files.wordpress.com/2013/06/dsc_5359.jpg?w=640" alt="Tradiciones Colombianas" class="gallery-image w-full h-64 object-cover"/>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="text-3xl font-bold mb-4">Diversidad Regional</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="region-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://sinuforyou.com/wp-content/uploads/2021/11/blog-sinuforyou-04.jpg" alt="Gente del Caribe" class="w-full h-64 object-cover rounded-lg mb-4"/>
+        <h3 class="text-2xl font-bold mb-3 text-emerald-700">Región Caribe</h3>
+        <p class="text-gray-600 mb-4">La alegría y el sabor caribeño se reflejan en su música, bailes y la forma extrovertida de su gente.</p>
+      </div>
+      <div class="region-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://www.lifeder.com/wp-content/uploads/2020/10/quechuas-1.jpg" alt="Paisaje Andino" class="w-full h-64 object-cover rounded-lg mb-4"/>
+        <h3 class="text-2xl font-bold mb-3 text-emerald-700">Región Andina</h3>
+        <p class="text-gray-600 mb-4">La amabilidad y laboriosidad de sus habitantes se mezcla con tradiciones ancestrales.</p>
+      </div>
+      <div class="region-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://i.pinimg.com/736x/99/fd/99/99fd99568e4a52070c4d2f9afa9ca727.jpg" alt="Costa Pacífica" class="w-full h-64 object-cover rounded-lg mb-4"/>
+        <h3 class="text-2xl font-bold mb-3 text-emerald-700">Región Pacífica</h3>
+        <p class="text-gray-600 mb-4">Rica en expresiones culturales afrocolombianas y una hospitalidad única.</p>
+      </div>
+      <div class="region-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://regionorinoquia.com/wp-content/uploads/2019/10/Sin-t%C3%ADtulo-min-100.jpg.webp" alt="Llanos Orientales" class="w-full h-64 object-cover rounded-lg mb-4"/>
+        <h3 class="text-2xl font-bold mb-3 text-emerald-700">Región Orinoquía</h3>
+        <p class="text-gray-600 mb-4">La cultura llanera y su espíritu libre se reflejan en su música y tradiciones.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="text-3xl font-bold mb-4">Tradiciones y Celebraciones</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="celebration-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://radionacional-v3.s3.amazonaws.com/s3fs-public/styles/portadas_relaciona_4_3/public/node/article/field_image/759-20_Folclor.jpg?h=170ba4b8&itok=mUnal7Ty" alt="Fiesta Patronal" class="w-full h-40 object-cover rounded-lg mb-4"/>
+        <h3 class="text-xl font-bold mb-3 text-emerald-700">Fiestas Patronales</h3>
+        <p class="text-gray-600">Celebraciones religiosas que unen a las comunidades con música, baile y gastronomía típica.</p>
+      </div>
+      <div class="celebration-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/43T5DN4ZCFF7TI3YYKLXJYUEUA.JPG" alt="Festival Folclórico" class="w-full h-40 object-cover rounded-lg mb-4"/>
+        <h3 class="text-xl font-bold mb-3 text-emerald-700">Festivales Folclóricos</h3>
+        <p class="text-gray-600">Expresiones culturales que mantienen vivas nuestras tradiciones a través de la música y la danza.</p>
+      </div>
+      <div class="celebration-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://old.parquesnacionales.gov.co/portal/wp-content/uploads/2014/07/s042.jpg" alt="Encuentro Comunitario" class="w-full h-40 object-cover rounded-lg mb-4"/>
+        <h3 class="text-xl font-bold mb-3 text-emerald-700">Encuentros Comunitarios</h3>
+        <p class="text-gray-600">Espacios de integración donde se fortalecen los lazos sociales y se comparten experiencias.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="text-3xl font-bold mb-4">Valores y Costumbres</h2>
+    <div class="values-grid grid md:grid-cols-2 gap-8">
+      <div class="value-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://litiapp.com/wp-content/uploads/2024/05/familia-colombiana.jpg" alt="Familia Colombiana" class="w-full h-48 object-cover rounded-lg mb-4"/>
+        <h3 class="text-2xl font-bold mb-3 text-emerald-700">Familia y Unión</h3>
+        <p class="text-gray-600">La importancia de los lazos familiares y las reuniones que fortalecen nuestras relaciones.</p>
+      </div>
+      <div class="value-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://d3jwam0i5codb7.cloudfront.net/wp-content/uploads/2023/02/GettyImages-1154647955-1-2240x1500.jpg" alt="Solidaridad Comunitaria" class="w-full h-48 object-cover rounded-lg mb-4"/>
+        <h3 class="text-2xl font-bold mb-3 text-emerald-700">Solidaridad</h3>
+        <p class="text-gray-600">El espíritu de ayuda mutua y apoyo comunitario que nos caracteriza.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="text-3xl font-bold mb-4">Arte y Expresión Cultural</h2>
+    <div class="art-section grid md:grid-cols-3 gap-6">
+      <div class="art-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://s3.amazonaws.com/rtvc-assets-senalcolombia.gov.co/s3fs-public/field/image/petronio-senal-colombia.jpg" alt="Música y Danza" class="w-full h-48 object-cover rounded-lg mb-4"/>
+        <h3 class="text-2xl font-bold mb-3 text-emerald-700">Música y Danza</h3>
+        <p class="text-gray-600 mb-4">Desde el vallenato hasta la cumbia, nuestros ritmos expresan la alegría y pasión de nuestra gente.</p>
+      </div>
+      <div class="art-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://www.lectura-abierta.com/wp-content/uploads/2024/02/Literatura-Colombiana-y-su-historia.jpg" alt="Literatura Colombiana" class="w-full h-48 object-cover rounded-lg mb-4"/>
+        <h3 class="text-2xl font-bold mb-3 text-emerald-700">Literatura y Poesía</h3>
+        <p class="text-gray-600 mb-4">La riqueza de nuestra narrativa oral y escrita, que cuenta historias de magia y realidad.</p>
+      </div>
+      <div class="art-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://imagenes.eltiempo.com/files/image_1200_600/uploads/2018/08/16/5b75f68a8512c.jpeg" alt="Teatro Colombiano" class="w-full h-48 object-cover rounded-lg mb-4"/>
+        <h3 class="text-2xl font-bold mb-3 text-emerald-700">Teatro y Artes Escénicas</h3>
+        <p class="text-gray-600 mb-4">Espacios de expresión donde se representan nuestras historias y tradiciones.</p>
+      </div>
+    </div>
+  </div>
+</DetailLayout>

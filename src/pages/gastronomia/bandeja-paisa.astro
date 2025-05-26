@@ -1,0 +1,65 @@
+---
+import DetailLayout from '../../layouts/DetailLayout.astro';
+---
+
+<DetailLayout
+  title="Bandeja Paisa"
+  description="El plato más emblemático de la gastronomía antioqueña, una explosión de sabores y tradición."
+  type="food"
+>
+  <article class="max-w-4xl mx-auto">
+    <section class="content-section">
+      <h2 class="text-3xl font-bold text-orange-800 mb-6">La Reina de la Cocina Paisa</h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-4">
+        La bandeja paisa es mucho más que un plato típico; es un símbolo de la abundancia y hospitalidad antioqueña.
+        Este festín en un plato representa la historia y tradición de una región entera.
+      </p>
+    </section>
+
+    <div class="image-gallery">
+      <div class="gallery-image">
+        <img 
+          src="https://upload.wikimedia.org/wikipedia/commons/3/30/Bandeja_paisa%2C_plato_Colombiano.jpg"
+          alt="Bandeja Paisa Tradicional"
+          class="w-full h-64 object-cover"
+        />
+      </div>
+    </div>
+
+    <section class="content-section">
+      <h2 class="text-3xl font-bold text-orange-800 mb-6">Ingredientes Principales</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-orange-50 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-orange-700 mb-3">Componentes Básicos</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Frijoles rojos</li>
+            <li>Arroz blanco</li>
+            <li>Carne molida</li>
+            <li>Chicharrón</li>
+            <li>Huevo frito</li>
+            <li>Plátano maduro</li>
+            <li>Aguacate</li>
+            <li>Arepa</li>
+          </ul>
+        </div>
+        <div class="bg-orange-50 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-orange-700 mb-3">Acompañamientos</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Hogao (salsa de tomate y cebolla)</li>
+            <li>Ají</li>
+            <li>Limón</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/MNx6Zldhy_g"
+        title="Cómo preparar una Bandeja Paisa"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </article>
+</DetailLayout>

@@ -1,0 +1,72 @@
+---
+import DetailLayout from '../../layouts/DetailLayout.astro';
+---
+
+<DetailLayout 
+  title="Arepas - El Pan Diario Colombiano" 
+  description="Explora la diversidad de arepas colombianas, desde la arepa de huevo costeña hasta la arepa paisa, un elemento fundamental de nuestra gastronomía."
+  type="food"
+>
+  <div class="content-section">
+    <h2 class="text-3xl font-bold mb-4">La Versatilidad de la Arepa</h2>
+    <p class="text-lg mb-6">La arepa es más que un alimento en Colombia, es parte de nuestra identidad cultural. Cada región tiene su propia versión, con diferentes preparaciones y acompañamientos.</p>
+    
+    <div class="image-gallery mb-8">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVaPfYmS2oqumhgNGLA3cY5rJ48A2HymfpUEQCeNJRaUSesT4lps1Ll0ZrpJeoY9I0YsbfhT_xOycPEZDPKL6XEebqwYH6zdWpxviVtp-3r_JO-hv887HFjOtsld4AcYgKmuBVv2vhhn-5W0DGu26EfImdKSn_onC6dW67-CnzBobubGNl2eDeOT1vWeM/w1200-h630-p-k-no-nu/Arepa%20de%20huevo%205__.jpg" alt="Arepa de Huevo" class="gallery-image w-full h-64 object-cover"/>
+      <img src="https://i1.wp.com/www.certifiedpastryaficionado.com/wp-content/uploads/2022/03/Colombian-Arepas-con-Queso_IMG_2950.jpg" alt="Arepa de Queso" class="gallery-image w-full h-64 object-cover"/>
+      <img src="https://bnbcolombia.com/wp-content/uploads/2024/12/Arepa-paisa-1024x576.jpg" alt="Arepa Paisa" class="gallery-image w-full h-64 object-cover"/>
+    </div>
+
+    <div class="history-section bg-amber-50 p-6 rounded-lg mb-8">
+      <h2 class="text-2xl font-bold mb-4">Historia y Tradición</h2>
+      <p class="text-gray-700 mb-4">La arepa tiene sus raíces en las culturas indígenas precolombinas, con una historia que se remonta a más de 3.000 años. Los pueblos indígenas utilizaban el maíz molido para crear estos discos planos que cocinaban sobre budares de barro.</p>
+      <p class="text-gray-700">A lo largo de los siglos, la arepa evolucionó y se adaptó a las diferentes regiones de Colombia, incorporando nuevos ingredientes y técnicas de preparación, convirtiéndose en un elemento fundamental de nuestra mesa diaria.</p>
+    </div>
+
+    <div class="varieties-section mb-8">
+      <h2 class="text-2xl font-bold mb-6">Tipos de Arepas por Región</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="variety-card bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-emerald-700 mb-3">Costa Caribe</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Arepa de huevo: Doble cocción, rellena de huevo</li>
+            <li>Arepa de queso costeño: Con queso rallado en la masa</li>
+            <li>Arepa de choclo: De maíz tierno dulce</li>
+          </ul>
+        </div>
+        <div class="variety-card bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-emerald-700 mb-3">Región Andina</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Arepa paisa: Delgada y blanca, típica de Antioquia</li>
+            <li>Arepa de chocolo: Dulce, hecha con maíz tierno</li>
+            <li>Arepa boyacense: Amarilla y dulce</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="preparation-section bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-4">Preparación Tradicional</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="text-gray-700 space-y-3">
+          <p><strong>Ingredientes básicos:</strong></p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Harina de maíz precocida</li>
+            <li>Agua</li>
+            <li>Sal al gusto</li>
+            <li>Queso (opcional)</li>
+          </ul>
+        </div>
+        <div class="text-gray-700 space-y-3">
+          <p><strong>Proceso:</strong></p>
+          <ol class="list-decimal list-inside space-y-1">
+            <li>Mezclar la harina con agua y sal</li>
+            <li>Amasar hasta obtener una masa homogénea</li>
+            <li>Formar discos del tamaño deseado</li>
+            <li>Cocinar en plancha o budare caliente</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</DetailLayout>

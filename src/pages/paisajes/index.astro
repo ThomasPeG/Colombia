@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import DestinationCard from '../../components/common/DestinationCard.astro';
+import SectionContainer from '../../components/common/SectionContainer.astro';
+import { paisajes } from '../../data/paisajes'
+
+---
+
+<Layout title="Paisajes de Colombia - Colombia Mágica">
+  <main class="container mx-auto px-4">
+    <SectionContainer title="Paisajes Inolvidables" id="paisajes-main">
+      <div class="grid md:grid-cols-2 gap-8">
+        {paisajes.map(paisaje => (
+          <DestinationCard 
+            title={paisaje.title}
+            description={paisaje.description}
+            imageUrl={paisaje.imageUrl}
+            imageAlt={paisaje.title}
+            href={paisaje.href}
+          />
+        ))}
+      </div>
+    </SectionContainer>
+  </main>
+</Layout>

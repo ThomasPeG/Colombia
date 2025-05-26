@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import DestinationCard from '../../components/common/DestinationCard.astro';
+import SectionContainer from '../../components/common/SectionContainer.astro';
+import { culturas } from '../../data/cultura';
+
+const calidezSection = culturas.find(c => c.id === "calidez-colombiana");
+const otherCultures = culturas.filter(c => c.id !== "calidez-colombiana");
+---
+
+<Layout title="Cultura Colombiana - Colombia Mágica">
+  <main class="container mx-auto px-4">
+    <!-- Sección destacada de Calidez Colombiana -->
+    {calidezSection && (
+      <div class="w-full mb-16 relative overflow-hidden rounded-xl shadow-2xl" style="margin-top: 2rem;">
+        <div class="relative h-[500px]">
+          <img 
+            src={calidezSection.imageUrl} 
+            alt={calidezSection.title}
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end">
+            <div class="p-8 text-white max-w-3xl mx-auto text-center mb-8">
+              <h2 class="text-4xl font-bold mb-4">{calidezSection.title}</h2>
+              <p class="text-xl mb-6">{calidezSection.description}</p>
+              <a 
+                href={calidezSection.href}
+                class="inline-block px-8 py-3 bg-yellow-500 text-black font-bold rounded-full hover:bg-yellow-400 transition-colors"
+              >
+                Conoce Nuestra Gente
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+
+    <!-- Otras secciones culturales -->
+    <SectionContainer title="Explora Nuestra Cultura" id="cultura-main" className="bg-white py-16 rounded-lg shadow-lg">
+      <div class="grid md:grid-cols-2 gap-8 px-4">
+        {otherCultures.map(cultura => (
+          <DestinationCard 
+            title={cultura.title}
+            description={cultura.description}
+            imageUrl={cultura.imageUrl}
+            imageAlt={cultura.title}
+            href={cultura.href}
+          />
+        ))}
+      </div>
+    </SectionContainer>
+  </main>
+</Layout>

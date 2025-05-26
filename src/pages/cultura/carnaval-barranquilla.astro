@@ -1,0 +1,55 @@
+---
+import DetailLayout from '../../layouts/DetailLayout.astro';
+---
+
+<DetailLayout
+  title="Carnaval de Barranquilla"
+  description="La fiesta más colorida de Colombia, donde la alegría y la tradición se unen en una explosión de cultura."
+  type="culture"
+>
+  <article class="max-w-4xl mx-auto">
+    <section class="content-section">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-6">¡Quien lo vive es quien lo goza!</h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-4">
+        El Carnaval de Barranquilla, declarado Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO,
+        es la máxima expresión cultural del Caribe colombiano. Durante cuatro días, la ciudad se transforma
+        en un escenario de música, danza y tradición.
+      </p>
+    </section>
+
+    <div class="image-gallery">
+      <div class="gallery-image">
+        <img 
+          src="https://carnavaldebarranquilla.org/wp-content/uploads/2019/06/Marimondas-de-Barrio-Abajo.jpg"
+          alt="Bailarines del Carnaval"
+          class="w-full h-64 object-cover"
+        />
+      </div>
+    </div>
+
+    <section class="content-section">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-6">Eventos Principales</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-yellow-50 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-yellow-700 mb-3">Batalla de Flores</h3>
+          <p class="text-gray-700">El desfile inaugural del Carnaval, donde carrozas, comparsas y disfraces
+          llenan de color las calles de Barranquilla.</p>
+        </div>
+        <div class="bg-yellow-50 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-yellow-700 mb-3">Gran Parada</h3>
+          <p class="text-gray-700">Un espectacular desfile donde se presentan las danzas tradicionales
+          y las expresiones folclóricas más representativas.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/d9FfLVr0ruA"
+        title="Carnaval de Barranquilla"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </article>
+</DetailLayout>

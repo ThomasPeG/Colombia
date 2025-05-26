@@ -1,0 +1,101 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="bg-emerald-600 text-white p-4 fixed w-full top-0 z-50 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold hover:text-emerald-200 transition-colors">Colombia Mágica</h1>
+        <div class="space-x-4 hidden md:block">
+          <a href="/" class="hover:text-emerald-200 transition-colors">Inicio</a>
+          <a href="/paisajes" class="hover:text-emerald-200 transition-colors">Paisajes</a>
+          <a href="/cultura" class="hover:text-emerald-200 transition-colors">Cultura</a>
+          <a href="/gastronomia" class="hover:text-emerald-200 transition-colors">Gastronomía</a>
+        </div>
+      </div>
+    </nav>
+    <div class="pt-16"> <!-- Espacio para el nav fijo -->
+      <slot />
+    </div>
+    <footer class="bg-emerald-800 text-white p-8 mt-8">
+      <div class="container mx-auto text-center">
+        <p class="text-emerald-200">© 2024 Colombia Mágica - Descubre la magia de nuestra tierra</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
+  }
+  html {
+    font-family: 'Montserrat', sans-serif;
+    background: #f6f6f6;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a5f7a;
+    text-align: center;
+    margin: 2rem 0;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #10b981, #059669);
+    border-radius: 2px;
+  }
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  img {
+    transition: transform 0.3s ease;
+  }
+  img:hover {
+    transform: scale(1.02);
+  }
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+</style>
